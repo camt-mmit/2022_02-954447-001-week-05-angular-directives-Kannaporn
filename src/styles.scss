@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+    
+}
+a:active {
+    background-color:khaki;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    color: green;
+}
+ul, li {
+    display: inline-block;
+    padding: 5px;
+}
+button {
+    margin: 10px;
+    font-size: large;
+    color: white;
+    background-color: plum;
+    border: 0px;
+}
+input {
+margin: 10px;
+}
+body {
+    border: 1px burlywood outset;
+}
+h1, h2 {
+    color: deeppink;
+}
+div {
+    background-color: coral;
+}
+h3 {
+    background-color: black;
+    color: white;
+}
+output {
+    color: brown;
+    
+}

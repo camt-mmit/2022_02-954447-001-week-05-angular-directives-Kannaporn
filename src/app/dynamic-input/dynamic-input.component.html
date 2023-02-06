@@ -1,0 +1,19 @@
+<h2>Dynamic Input</h2>
+<button type="button" (click)="addsection()">Add Section</button>
+<section *ngFor="let section of sections; let i = index">
+    <h3>
+        <button type="button" (click)="addinput(section)">Add </button> Section {{ i + 1 }}
+        <button type="button" (click)="removesection(i)"[disabled]="sections.length===1">X</button>
+    </h3>
+    <div>
+        <div *ngFor="let input of section; let j = index">
+            <input
+            #elem
+            type="number"
+            [value]="input.value"
+            (change)="input.value = elem.valueAsNumber"/>
+            <button type="button" (click)="removeinput(section, j)" [disabled]="section.length===1">X</button>
+        </div>
+    </div>
+    <output><b>{{ getresult(section) }}</b></output>
+</section>
